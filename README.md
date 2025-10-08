@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
 ### 4. Modell letöltése
 
-Töltsd le a `stoptabla` mappát (ahol a tanított modell található), majd helyezd el a `yolov5` mappán belül:
+Töltsd le a `best.pt` modellt, majd helyezd el a `yolov5` mappán belül:
 
 ```
 yolov5/
@@ -39,12 +39,12 @@ yolov5/
 A következő paranccsal indíthatod a stoptábla felismerést:
 
 ```bash
-python detect.py --weights stoptabla/weights/best.pt --source 0
+python detect.py --weights best.pt --source 0
 ```
 
 ## Fontosabb Argumentumok
 
-- `--weights`: A tanított modell elérési útja (pl.: `stoptabla/weights/best.pt`)
+- `--weights`: A tanított modell elérési útja (pl.: `best.pt`)
 - `--source`: Bemeneti forrás (pl. `0` = webkamera, `path/to/image.jpg`, `path/to/video.mp4`, stb.)
 - `--img-size`: Bemeneti kép mérete (pl. `640`, `1280` stb.)
 - `--conf-thres`: Konfidenciaszint küszöb (0 és 1 között, pl. `0.25`)
