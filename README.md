@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
 ### 4. Modell letöltése
 
-Töltsd le a `best.pt` modellt, majd helyezd el a `yolov5` mappán belül:
+Töltsd le a `best.pt` modellt a Sharkos drive-ról (nem tudom ide feltölteni mert nagy a fájl), majd helyezd el a `yolov5` mappán belül:
 
 ```
 yolov5/
